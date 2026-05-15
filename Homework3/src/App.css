@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffd1dc);
+  min-height: 100vh;
+}
+
+/* ===== الهيدر ===== */
+.header {
+  background: linear-gradient(90deg, #e91e63, #f06292);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== الكونتينر العام ===== */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+/* ===== كرت لكل كومبوننت ===== */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== العناوين ===== */
+h2 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+/* ===== الأزرار ===== */
+button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ad1457;
+  transform: scale(1.05);
+}
+
+/* ===== input ===== */
+input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #f48fb1;
+  margin: 5px;
+  outline: none;
+}
+
+/* ===== النصوص ===== */
+p {
+  color: #444;
+}
+
+/* ===== todo list ===== */
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: #fff0f5;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  cursor: pointer;
+}
+
+/* ===== خطوط مكتملة ===== */
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
