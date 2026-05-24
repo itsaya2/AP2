@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #ffe8f3,
+      #fff5fa 40%,
+      #ffd6ea
+    );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+
+.app-container {
+  width: 90%;
+  max-width: 680px;
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 28px;
+
+  padding: 30px;
+
+  border:
+    1px solid rgba(255, 182, 193, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(255, 105, 180, 0.15),
+    inset 0 0 20px rgba(255, 255, 255, 0.4);
+
+  animation:
+    pop 0.7s ease;
+}
+
+/* Title */
+
+h1 {
+  text-align: center;
+
+  font-size: 2.7rem;
+  font-weight: 800;
+
+  margin-bottom: 14px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4f93,
+      #ff85c2
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 15px rgba(255, 105, 180, 0.15);
+}
+
+h2 {
+  margin: 18px 0 12px;
+
+  font-size: 1.4rem;
+
+  color: #d63384;
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  margin: 8px 0 14px;
+
+  border: none;
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.82);
+
+  color: #5f4150;
+
+  box-shadow:
+    inset 0 0 6px rgba(255, 182, 193, 0.2);
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 0 14px rgba(255, 105, 180, 0.25);
+}
+
+input::placeholder {
+  color: #d18bb0;
+}
+
+/* Buttons */
+
+button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff69b4,
+      #ff85c2
+    );
+
+  box-shadow:
+    0 6px 18px rgba(255, 105, 180, 0.25);
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform:
+    translateY(-3px)
+    scale(1.02);
+
+  box-shadow:
+    0 10px 24px rgba(255, 105, 180, 0.35);
+}
+
+/* List */
+
+ul {
+  list-style: none;
+
+  margin-top: 14px;
+}
+
+li {
+  padding: 14px;
+
+  margin: 10px 0;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.78);
+
+  border-left:
+    6px solid #ff69b4;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 5px 14px rgba(255, 182, 193, 0.12);
+}
+
+li:hover {
+  transform: translateX(6px);
+
+  background:
+    rgba(255, 240, 247, 0.95);
+}
+
+/* Text */
+
+p {
+  color: #6b4b5b;
+
+  margin-top: 5px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe3ef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff85c2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f93;
+}
+
+/* Selection */
+
+::selection {
+  background: #ff69b4;
+  color: white;
+}
+
+/* Animation */
+
+@keyframes pop {
+
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

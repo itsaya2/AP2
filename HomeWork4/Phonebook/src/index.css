@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(255, 235, 245, 0.45),
+      rgba(255, 220, 235, 0.45)
+    ),
+
+    url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2000&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+/* Root */
+
+#root {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+/* Main Container */
+
+.app-container {
+  width: 100%;
+  max-width: 720px;
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
+  border:
+    1px solid rgba(255, 182, 193, 0.3);
+
+  box-shadow:
+    0 15px 40px rgba(255, 105, 180, 0.18),
+    0 6px 20px rgba(0, 0, 0, 0.08);
+
+  animation:
+    fadeIn 0.7s ease;
+}
+
+/* Titles */
+
+h1 {
+  text-align: center;
+
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff3f8e,
+      #ff7abf
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 15px rgba(255, 105, 180, 0.18);
+}
+
+h2 {
+  margin: 18px 0 10px;
+
+  color: #d63384;
+
+  font-size: 1.4rem;
+}
+
+/* Paragraphs */
+
+p {
+  color: #6b4b5b;
+
+  margin-top: 6px;
+
+  font-size: 15px;
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+
+  padding: 14px;
+
+  margin: 8px 0 15px;
+
+  border: none;
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.88);
+
+  outline: none;
+
+  color: #5f4150;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    inset 0 0 6px rgba(255, 182, 193, 0.2);
+}
+
+input:focus {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 0 14px rgba(255, 105, 180, 0.3);
+}
+
+input::placeholder {
+  color: #d18bb0;
+}
+
+/* Buttons */
+
+button {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f93,
+      #ff85c2
+    );
+
+  box-shadow:
+    0 8px 20px rgba(255, 105, 180, 0.25);
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform:
+    translateY(-3px)
+    scale(1.02);
+
+  box-shadow:
+    0 12px 24px rgba(255, 105, 180, 0.35);
+}
+
+/* List */
+
+ul {
+  list-style: none;
+
+  margin-top: 16px;
+}
+
+li {
+  background:
+    rgba(255, 255, 255, 0.82);
+
+  margin: 10px 0;
+
+  padding: 15px;
+
+  border-radius: 18px;
+
+  border-left:
+    6px solid #ff69b4;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 6px 14px rgba(255, 182, 193, 0.14);
+}
+
+li:hover {
+  transform: translateX(6px);
+
+  background:
+    rgba(255, 240, 247, 0.95);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe3ef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff85c2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f93;
+}
+
+/* Selection */
+
+::selection {
+  background: #ff69b4;
+  color: white;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
